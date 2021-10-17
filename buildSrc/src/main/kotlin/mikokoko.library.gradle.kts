@@ -1,5 +1,4 @@
 import org.gradle.api.tasks.testing.logging.TestLogEvent
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 group = "me.pengjinfei"
 version = "1.0-SNAPSHOT"
@@ -13,7 +12,11 @@ plugins {
 }
 
 repositories {
-    mavenCentral() // <2>
+    mavenLocal()
+    maven {
+        setUrl("https://maven.aliyun.com/nexus/content/groups/public/")
+    }
+    mavenCentral()
 }
 
 dependencies {

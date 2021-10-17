@@ -9,12 +9,11 @@ plugins {
 
 dependencies {
     implementation(project(":common"))
-    implementation(project(":gateway"))
     implementation("io.vertx:vertx-web")
     implementation("io.vertx:vertx-hazelcast")
 }
 
-val mainVerticleName = "com.mikokoko.huiyuan.HuiYuanVerticle"
+val mainVerticleName = "com.mikokoko.merchant.MerchantVerticle"
 val launcherClassName = "io.vertx.core.Launcher"
 
 val watchForChange = "src/**/*"

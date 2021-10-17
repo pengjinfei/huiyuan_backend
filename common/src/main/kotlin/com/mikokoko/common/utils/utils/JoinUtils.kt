@@ -1,4 +1,4 @@
-package com.mikokoko.utils
+package com.mikokoko.common.utils.utils
 
 
 class JoinUtils {
